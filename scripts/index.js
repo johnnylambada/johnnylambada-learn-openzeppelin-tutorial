@@ -11,6 +11,13 @@ module.exports = async function main(callback) {
     const value = await box.retrieve();
     console.log("Box value is", value.toString());
 
+    // Send a transaction to store() a new value in the Box
+    await box.store(23);
+
+    // Call the retrieve() function of the deployed Box contract
+    newValue = await box.retrieve();
+    console.log("Box value is", newValue.toString());
+
     // our code ends here
     callback(0);
   } catch (error) {
