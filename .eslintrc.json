@@ -2,8 +2,13 @@
     "env": {
         "browser": true,
         "commonjs": true,
-        "es2021": true
+        "es2021": true,
+        "mocha": true,
+        "truffle/globals": true
     },
+    "plugins": [
+        "truffle"
+    ],
     "extends": [
         "airbnb-base"
     ],
