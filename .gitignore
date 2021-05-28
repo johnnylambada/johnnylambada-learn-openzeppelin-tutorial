@@ -1,3 +1,9 @@
 node_modules/
 build/
 secrets.json
+
+// .gitignore
+# OpenZeppelin
+.openzeppelin/dev-*.json
+.openzeppelin/.session
+.openzeppelin/unknown-*.json
